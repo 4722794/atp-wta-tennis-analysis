@@ -1,6 +1,7 @@
 # Ignore everything
 *
 # Don't ignore directories
+
 !tennis_atp
 !tennis_wta
 !*.py
