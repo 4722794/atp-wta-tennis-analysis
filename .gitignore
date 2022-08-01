@@ -1,8 +1,11 @@
 # Ignore everything
-*
-# Don't ignore directories
-
-!tennis_atp
-!tennis_wta
-!*.py
-!*.gitignore
+__pycache__
+archive
+figures
+figures_wta
+roughpages
+scrapy
+search.log
+*.eps
+*.svg
+*.ipynb
