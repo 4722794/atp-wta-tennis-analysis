@@ -9,3 +9,6 @@ search.log
 *.eps
 *.svg
 *.ipynb
+.DS_Store
+.ipynb_checkpoints
+Icon
