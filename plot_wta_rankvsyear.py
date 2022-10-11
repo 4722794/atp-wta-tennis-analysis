@@ -10,9 +10,11 @@ plt.xkcd(randomness=0.5, scale=0.25)
 fig, axes = plt.subplots(figsize=(10, 6))
 for player, player_ts in top_1000_historical.items():
     if player_ts.loc[0, 'current_rank'] <= 20:
+        # Matplotlib plot below
         player_ts.plot(x='ranking_date', y='annual_best_rank',
                        legend=False, logy=True, color='#FEBA4F', ax=axes)
     elif player_ts.loc[0, 'ioc'] == 'IND':
+        # Matplotlib plot below
         player_ts.plot(x='ranking_date', y='annual_best_rank',
                        legend=False, logy=True, color='#4580B1', ax=axes)
 axes.plot(range(2000, 2023), (100,)*len(range(2000, 2023)),

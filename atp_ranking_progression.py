@@ -52,6 +52,8 @@ for player_id in top_1000_timeseries.columns:
         'player_id']).rename(columns={'rank_x': 'annual_best_rank', 'rank_y': 'current_rank'})
     player_historical = player_historical[player_historical['annual_best_rank'].notna(
     )].reset_index(drop=True)
+    if player_historical['name_first'].iloc[0] == 'Prajnesh':
+        val = 5
     player_historical['age'] = player_historical['ranking_date'] - \
         pd.to_datetime(player_historical['dob'], format='%Y%m%d').dt.year
     top_1000_historical[player_historical.iat[0, 3]] = player_historical
