@@ -1,3 +1,6 @@
 [submodule "landingv1"]
 	path = landingv1
 	url = git@github.com:4722794/landingv1.git
+[submodule "atp"]
+	path = atp
+	url = https://github.com/4722794/atp-wta-tennis-analysis
